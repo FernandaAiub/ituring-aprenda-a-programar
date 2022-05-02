@@ -10,7 +10,6 @@ let age1 = 13
 let age2 = 18
 let age3 = 20
 
-// chame a função legalAgeOrNot que você construiu logo abaixo deste comentário para cada uma das idades em age1, age2, age3.
 legalAgeOrNot(age1)
 legalAgeOrNot(age2)
 legalAgeOrNot(age3)
