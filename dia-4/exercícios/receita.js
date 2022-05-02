@@ -128,3 +128,14 @@ function totalComGorgeta(total, tip) {
 }
 
 console.log('O total em vendas + gorgetas foi R$', tcg)
+
+function vendasMenorQue50(receita) {
+  var menorQue50 = []
+  for (item of receita.valor) {
+    if (valor < 50) {
+      menorQue50.push(valor)
+    }
+  }
+}
+
+console.log(menorQue50.lenght, 'vendas foram menor que 50 reais;')
