@@ -106,10 +106,25 @@ let receita = [
 //Exercício 3: Quantas vendas foram abaixo de 50 reais?
 function valorTotal(receita) {
   let total = 0
-  for (let item of receita) {
+  for (let item of receita.valor) {
     total = total + valor
     return total
   }
 }
 
 console.log('O total de vendas foi R$', total)
+
+function valorGorgeta(receita) {
+  let tip = 0
+  for (let item of receita.gorgeta) {
+    tip = tip + gorgeta
+    return tip
+  }
+}
+
+function totalComGorgeta(total, tip) {
+  let tcg = total + tip
+  return tcg
+}
+
+console.log('O total em vendas + gorgetas foi R$', tcg)
