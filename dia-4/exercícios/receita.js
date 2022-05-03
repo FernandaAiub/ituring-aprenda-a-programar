@@ -104,38 +104,18 @@ let receita = [
 //Exercício 1: Qual o valor total de vendas sem gorjeta?
 //Exercício 2: Qual o valor total de vendas incluindo a gorjeta?
 //Exercício 3: Quantas vendas foram abaixo de 50 reais?
-function valorTotal(receita) {
-  let total = 0
-  for (let item of receita.valor) {
-    total = total + valor
-    return total
-  }
+
+let valorTotal = 0
+let total = 0
+for (item of receita) {
+  valorTotal = valorTotal + item.valor
+  total = total + item.gorgeta + item.valor
 }
 
-console.log('O total de vendas foi R$', total)
+console.log('O total de vendas foi R$', valorTotal)
+console.log('O total em vendas + gorgetas foi R$', total)
 
-function valorGorgeta(receita) {
-  let tip = 0
-  for (let item of receita.gorgeta) {
-    tip = tip + gorgeta
-    return tip
-  }
-}
+var menorQue50 = 0
+for (item of receita) if (item.valor < 50) menorQue50++
 
-function totalComGorgeta(total, tip) {
-  let tcg = total + tip
-  return tcg
-}
-
-console.log('O total em vendas + gorgetas foi R$', tcg)
-
-function vendasMenorQue50(receita) {
-  var menorQue50 = []
-  for (item of receita.valor) {
-    if (valor < 50) {
-      menorQue50.push(valor)
-    }
-  }
-}
-
-console.log(menorQue50.lenght, 'vendas foram menor que 50 reais;')
+console.log(menorQue50, 'vendas foram menor que 50 reais.')

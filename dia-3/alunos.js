@@ -46,7 +46,7 @@ let sobrenome = 'Sestari'
 
 //DESAFIO
 let texto = '11'
-let numero = 1
+let num = 1
 //console.log(texto + numero)
 //console.log(texto - numero)
 
