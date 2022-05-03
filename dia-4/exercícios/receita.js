@@ -101,10 +101,6 @@ let receita = [
   { valor: 809, gorjeta: 80.9 }
 ]
 
-//Exercício 1: Qual o valor total de vendas sem gorjeta?
-//Exercício 2: Qual o valor total de vendas incluindo a gorjeta?
-//Exercício 3: Quantas vendas foram abaixo de 50 reais?
-
 let valorTotal = 0
 let total = 0
 for (item of receita) {
