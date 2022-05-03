@@ -109,11 +109,11 @@ let valorTotal = 0
 let total = 0
 for (item of receita) {
   valorTotal = valorTotal + item.valor
-  total = total + item.gorgeta + item.valor
+  total = total + item.gorjeta + item.valor
 }
 
 console.log('O total de vendas foi R$', valorTotal)
-console.log('O total em vendas + gorgetas foi R$', total)
+console.log('O total em vendas + gorjetas foi R$', total)
 
 var menorQue50 = 0
 for (item of receita) if (item.valor < 50) menorQue50++
