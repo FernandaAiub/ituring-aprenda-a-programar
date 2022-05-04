@@ -4,20 +4,23 @@ const calculoIMC = (peso, altura) => {
 }
 
 const resultadoIMC = imc => {
+  let faixaIMC
+  if (imc < 18.5) {
+    faixaIMC = 'Abaixo do peso ideal'
+  }
   if (imc >= 18.5 && imc <= 24.9) {
-    let faixaIMC = 'Normal'
+    faixaIMC = 'Normal'
   }
   if (imc >= 25.0 && imc <= 29.9) {
-    let faixaIMC = 'Sobrepeso'
+    faixaIMC = 'Sobrepeso'
   }
   if (imc >= 30.0 && imc <= 40.0) {
-    let faixaIMC = 'Obesidade'
+    faixaIMC = 'Obesidade'
   }
   if (imc > 40.0) {
-    let faixaIMC = 'Obesidade grave'
-  } else {
-    let faixaIMC = 'Abaixo do peso ideal'
+    faixaIMC = 'Obesidade grave'
   }
+
   return faixaIMC
 }
 
