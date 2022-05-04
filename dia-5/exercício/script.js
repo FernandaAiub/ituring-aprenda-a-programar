@@ -1,22 +1,24 @@
-/*
-                De acordo com a tabela abaixo, implemente a lógica da função 
-                'faixaIMC' para, <br> recebendo o indice calculado no ex anterior 
-                como parametro, <br>retornar a faixa que a pessoa se encontra.
-*/
-
 const calculoIMC = (peso, altura) => {
   let imc = peso / (altura * altura)
   return imc
 }
 
-const resultadoIMC = indiceIMC => {
-  // insira sua lógica do ex.2 aqui.
-  // dica, lembre-se que quando queremos que duas condições sejam verdadeiras, usamos o operador &&
-  // neste caso, conforme vimos em aula, caso a pessoa precise estar
-  // acima de um imc E abaixo de outro, podemos fazer algo como
-  // if (x > 5 && x < 10) {
-  // }
-  // não esqueça de retornar o texto da faixa do IMC.
+const resultadoIMC = imc => {
+  if (imc >= 18.5 && imc <= 24.9) {
+    let faixaIMC = 'Normal'
+  }
+  if (imc >= 25.0 && imc <= 29.9) {
+    let faixaIMC = 'Sobrepeso'
+  }
+  if (imc >= 30.0 && imc <= 40.0) {
+    let faixaIMC = 'Obesidade'
+  }
+  if (imc > 40.0) {
+    let faixaIMC = 'Obesidade grave'
+  } else {
+    let faixaIMC = 'Abaixo do peso ideal'
+  }
+  return faixaIMC
 }
 
 const mostrarResultadoIMC = () => {
